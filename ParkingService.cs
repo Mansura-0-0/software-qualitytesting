@@ -18,7 +18,7 @@ namespace Project
             if (vehicleType == "standard")
                 if ((hours >= 1) && (hours < 3))
                     fee = hours * 4.0;
-                else if (hours >= 9)
+                else if (hours >= 4)
                     fee = hours * 3.0;
                 else
                     fee = 0.0;
