@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 
 namespace Project
 {
@@ -9,6 +10,7 @@ namespace Project
         public ParkingService(IDiscountService discountService)
         {
             _discountService = discountService;
+            ConsoleOutput("dddd")
         }
         //hhh
         public double CalculateFee(int hours, string vehicleType)
@@ -51,6 +53,7 @@ namespace Project
         public double GetDiscount()
         {
             return 0.9;
+            
         }
     }
 }
