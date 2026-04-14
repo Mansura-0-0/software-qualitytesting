@@ -10,7 +10,7 @@ namespace Project
         {
             _discountService = discountService;
         }
-
+        //hhh
         public double CalculateFee(int hours, string vehicleType)
         {
             double fee;
@@ -18,7 +18,7 @@ namespace Project
             if (vehicleType == "standard")
                 if ((hours >= 1) && (hours < 3))
                     fee = hours * 4.0;
-                else if (hours >= 4)
+                else if (hours >= 9)
                     fee = hours * 3.0;
                 else
                     fee = 0.0;
